@@ -1,0 +1,123 @@
+
+body{
+	text-align: center; /*Makes all text centered*/
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+header {
+	position: fixed; /*Keeps the Header while you scroll */
+	top: 0px; /* I want the header to be stuck to the top */
+	height: 50px; /* The height of the header */
+	background: #595959; /* Color of background code */
+	color: #ffffff; /* white */
+	width: 100%; /* Spans over the whole page, even if you change screen size */
+	z-index: 10; /* This causes the content to not go over the cover */
+	font-family: Arial;
+}
+
+h1
+{
+   font-family: Garamond; /* Cool font */
+   color:hsl(30, 100%, 10%); /* Hue(colour) Saturation(Amount of Gray in a given colour Lightness(Amount of white) */
+   text-align: center; /*Centers text*/
+   font-size: 48px; /*How big the letters are */
+   margin-top: 75px;
+}
+h2
+{
+  font-family: Garamond;
+  color:hsl(270, 100%, 10%);
+  text-align: center;
+}
+
+h3
+{
+	font-family: Garamond;
+	color:hsl(270, 100%, 10%);
+	text-align: center;
+}
+img {
+  border-radius: 100%; /* Makes my photo rounded*/
+}
+
+.nav{
+	float: left;
+	list-style: none;
+}
+.nav > li{ /* Orders for the list part of the class .nav */
+	display: inline-block;
+	padding: 0 25px; /* Gives space between nav bar words */
+}
+.nav > li > a{
+	text-decoration: none; /* Doesn't look like an ugly link anymore */
+	color: white;
+}
+
+a {
+    /*display: block;*/
+    padding: 8px;
+}
+
+	
+#banner { /* Specified ID's have to start with a #(Hashtag, Number sign, or Octothorpe(I can pull this one out when trying to be smart))*/
+	width: 100%;
+	height: 700px;
+	position: fixed; /* Causes the banner to not move */
+	top: 50px; /* How many pixels/room empty on top */
+	background: url(1.jpg);
+	background-size: cover;
+	text-align: center; /* My name and job title will be aligned in the center */
+}
+
+
+#content {
+	width: 100%;
+	position: relative; /* The content is free to be moved around */
+	top: 700px;
+	background: #b3b3b3;
+	height: 500px;
+	position: center; 
+	font-family: Garamond;	
+	text-align: none;
+}
+#content2 {
+	width: 100%;
+	position: relative; /* The content is free to be moved around */
+	top: 680px;
+	background: #b3b3b3;
+	height: 500px;
+	position: center; 
+	font-family: Garamond;	
+	text-align: none;
+}
+#content3 {
+	width: 100%;
+	position: relative; /* The content is free to be moved around */
+	top: 650px;
+	background: #b3b3b3;
+	height: 500px;
+	font-family: Garamond;	
+	text-align: none;
+}
+
+#p1 {
+	padding: 10px 13px; /* Makes the text fit better */
+}
+#p2{
+	padding: 10px 100px; 
+}
+#aboutmepadding {
+	padding: 50px 10px 0px 10px; /* Putting title where I want it */
+} 
+
+.border { /* Nice border around text and image */
+  height: 450px; /* So everything fits */
+  border: 2px solid white; /* width of the border, style and color */
+  margin: 50px 50px; 
+  padding: 10px 0px 0px 0px;
+  width: 90%;
+  border-radius: 20px; /* Creates a sleek edge */
+}
+
