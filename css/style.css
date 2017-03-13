@@ -51,7 +51,7 @@ img {
 	padding: 0 25px; /* Gives space between nav bar words */
 }
 .nav > li > a{
-	text-decoration: none; /* Doesn't look like an ugly link anymore */
+	text-decoration: none; /* Navigations don't look like an ugly link anymore */
 	color: white;
 }
 
@@ -80,7 +80,7 @@ a {
 	height: 500px;
 	position: center; 
 	font-family: Garamond;	
-	text-align: none;
+	text-align: left; /* aligns the text next to my picture */
 }
 #content2 {
 	width: 100%;
@@ -97,9 +97,30 @@ a {
 	position: relative; /* The content is free to be moved around */
 	top: 650px;
 	background: #b3b3b3;
-	height: 500px;
+	height: 300px;
 	font-family: Garamond;	
 	text-align: none;
+}
+
+#filler1{
+	width: 100%;
+	position: relative;
+	top: 680px;
+	background: url(3.jpg);
+	height: 500px;
+	position: center;
+	font-family: Garamond;
+	
+}
+
+#filler2{
+	width: 100%;
+	position: relative;
+	top: 680px;
+	background: url(3.jpg);
+	height: 500px;
+	position: center;
+	font-family: Garamond;
 }
 
 #p1 {
@@ -109,7 +130,7 @@ a {
 	padding: 10px 100px; 
 }
 #aboutmepadding {
-	padding: 50px 10px 0px 10px; /* Putting title where I want it */
+	padding: 5px 10px 0px 10px; /* Putting title where I want it */
 } 
 
 .border { /* Nice border around text and image */
@@ -119,5 +140,44 @@ a {
   padding: 10px 0px 0px 0px;
   width: 90%;
   border-radius: 20px; /* Creates a sleek edge */
+}
+
+form {
+  margin: 0 auto;  /* Centers form */
+  width: 400px; /* Size of it */
+  padding: 1em; /* The outline of it. Em is the unit of a letter m, so it's fit compared to any page size */
+  border: 1px solid #CCC;
+  border-radius: 1em; /* trims the edges of white border*/
+}
+
+form div + div {
+  margin-top: 1em; 
+}
+
+label {
+  display: inline-block; /* To make sure that all labels have the same size and are properly aligned */
+  width: 90px;
+  text-align: right;
+}
+
+input, textarea {
+  font: 1em sans-serif;  /* To make sure that all text fields have the same font settings */
+  width: 300px; 
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  border-color: #000;  /* To give a little highlight on active elements */
+}
+
+textarea {
+  vertical-align: top; /* Aligns Name,Email and Message with the corresponding box */
+  height: 5em; /* To make the Message box bigger */
+}
+
+.button {
+  /* To position the buttons to the same position of the text fields */
+  padding-left: 85px; /* same size as the label elements */
 }
 
