@@ -16,6 +16,12 @@ header {
 	z-index: 10; /* This causes the content to not go over the cover */
 	font-family: Arial;
 }
+p{
+	font-family: Garamond;
+	color: hsl(30, 100%, 10%);
+	font-size: 17px;
+	
+}
 
 h1
 {
