@@ -48,6 +48,11 @@ img {
   border-radius: 100%; /* Makes my photo rounded*/
 }
 
+article {
+	width: 500px;
+	padding: 20px;
+	margin: 0 auto;
+}
 .nav{
 	float: left;
 	list-style: none;
