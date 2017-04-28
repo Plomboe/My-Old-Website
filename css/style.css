@@ -48,11 +48,6 @@ img {
   border-radius: 100%; /* Makes my photo rounded*/
 }
 
-article {
-	max-width: 500px; /*Width of text 500 px wide at most, but can go smaller */
-	padding: 20px; /*Space immediately on the side is 20px */
-	margin: 0 auto; /* Space after padding, so the whole box, is centered and even on both sides, on any size or device */
-}
 .nav{
 	float: left;
 	list-style: none;
