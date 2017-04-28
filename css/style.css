@@ -186,6 +186,10 @@ textarea {
   /* To position the buttons to the same position of the text fields */
   padding-left: 85px; /* same size as the label elements */
 }
+.clearfix {
+	/* This hopefully fixes the overflow on phones */
+	overflow: auto;
+}
 
 /* Mobile layout of page */
 @media screen and (max-width: 992px) {
