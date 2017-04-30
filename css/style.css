@@ -74,6 +74,7 @@ a {
 	top: 50px; /* How many pixels/room empty on top */
 	background: url(1.jpg);
 	background-size: cover;
+	background-position: center;
 	text-align: center; /* My name and job title will be aligned in the center */
 }
 
