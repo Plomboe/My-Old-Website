@@ -1,131 +1,217 @@
-<!doctype html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This is to make it device friendly-->
-	<title>My Website</title>
-	<link rel = "stylesheet" type="text/css" href="css/style.css">
-	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>My Website</title>
 </head>
-<body> 
-	<header>
-			<ul class="nav">
-				<li style="float: left"><a href="#content">About</a></li> <!--The href is to send you to another part of my page, the specific div -->
-				<li style="float: left"><a href="#content2">Porfolio</a></li>
-				<li style="float: left"><a href="#content3">Contact</a></li>
-			</ul>	
-	</header>	
-	
-	<div id="banner"> 
-		<h1> Mohammad Tareq Karimi <h1> 
-		<h2> Jr Software Analyst || Jr Web Developer || Programming Enthusiast </h2>
+<body>
+	<!--navbar-->
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Tareq Karimi</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a data-toggle="collapse" data-parent="#accordion" href="#aboutMe">ABOUT</a></li>
+        	<li><a data-toggle="collapse" data-parent="#accordion" href="#education">EDUCATION</a></li>
+        	<li><a data-toggle="collapse" data-parent="#accordion" href="#experience">EXPERIENCE</a></li>
+					<li><a data-toggle="collapse" data-parent="#accordion" href="#projects">PROJECTS</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!--main container-->
+<div class="container-fluid bg-1 text-center">
+	<h1> TAREQ KARIMI</h1>	
+	<h6 class="describingWords">Developer | Tech Geek | Philomath</h6>
+  	<img src="images\github.svg" class="svg mediaIcon" alt="github">
+		<img src="images\linkedin.svg" class="svg mediaIcon" alt="My LinkedIn Profile">
+		<img src="images\google+.svg" class="svg mediaIcon" alt="My google plus">
+</div>
+
+<div id="accordion">
+	<div class="container-fluid bg-2 text-center">
+			<a data-toggle="collapse" data-parent="#accordion" href="#aboutMe"><img src="images\readingBook.svg" id="aboutMesvg" class="svg" alt="Reading Book"></a>
+			<a data-toggle="collapse" data-parent="#accordion" href="#education"><img src="images\gradCap.svg" id="educationsvg" class="svg" alt="Graduation Cap"></a>
+			<a data-toggle="collapse" data-parent="#accordion" href="#experience"><img src="images\laptop.svg" id="experiencesvg" class="svg" alt="Laptop"></a>
+			<a data-toggle="collapse" data-parent="#accordion" href="#projects"><img src="images\folder.svg" id="projectssvg" class="svg" alt="Folder"></a>
 	</div>
 
-	
-	<section id="content">
-	<div class="border">
-	<div class="clearfix">
-	<p>
-		
-		<div id="aboutmepadding">
-			<h2> About Me </h2>
+	<div class="collapse in aboutMe container-fluid bg-3 text-center" id="aboutMe" >
+		<aside><img src="images\me.jpg" class="image-responsive me" width="300" height="300"></img></aside>
+		<div class="aboutMeParagraph">
+			<h3 class="margin"> About Me </h3>
+			<div class="col-sm-12">
+			<p>Hi, Welcome to my Website! I am a currently a student at Centennial College studying Software Engineering and am super passionate about it! 
+			I love translating code into solutions for all sorts of problems, and am constantly trying to learn and see where
+			technology is heading, and how I can be a better developer and prepare myself for it. With huge enhancements and advances
+			within Artificial Intellince, Machine Learning, Self driving vehicles, automation of everything, internet of things, 
+			big data analytics, cloud computing, and cyber security, the possibilities are endless! Never has there been a more 
+			exciting time to be a developer :) </p>
+			</div>
 		</div>
-		<a href="https://www.linkedin.com/in/tareq-karimi/" target="_blank">
-		<img src="\images\Me2.jpg" alt="A picture of me" ALIGN="left" /></a>
-		<div id="p1">
-		<p>
-			Welcome to my website! Let me start by introducing myself. My name is Tareq 
-		Karimi, and I'm a curious, eager philomath always trying to learn something new. 
-		Whether it being history, math, physics, to computer science, programming and even 
-		English, I'm always learning. 
-			</p>
-		
-		<p>
-			Right now, I am currently an NPower Canada student. I studied Electrical Engineering 
-		for one year at UOIT, but it took me a while to figure it wasn't my passion. My passion
-		is programming and computers! 
-		</p>
-		
-		<p>
-			Outside of class, I have a lot of hobbies. The sport teams I was a part of in
-		in my school include: Baseball, Volleyball, Ultimate, and the Chess team. Chess is
-		one of my many hobbies, and one in which I competed in highschool. My school won the 
-		Toronto Division 2 chess league,going undefeated. I also happened to get the award for
-		the Most Valuable Player.
-		</p>
-		</div>
-		</div>
-		</div>
-		
-	</section>
-	
-	<section id="filler1">
-	</section>
-	
-	<section id="content2">
-	<div class="border">
-	<div class="clearfix">
-	<p>
-		<div id="aboutmepadding">
-			<h2> Portfolio </h2>
-		</div>
-		
-		<div id="p2">
-	
-		<p>	
-		Currently I'm trying to develop a text-based(console) interactive story game, with weapons,
-		monsters and battles. I have my first test game I created up on Github.com/Plomboe, and 
-		there will be more to come.
-			</p>
-			<p>
-		My Github has the previous projects I have worked on. I created a calculator, a form 
-		application which you can check your weight on other planets, a number sorter and a 
-		few more. There are a lot of things I want to work on, but a couple I'm working on 
-		right now. 
-			</p>
-	    
-		<div id="LinkedIn">
-			<a href="https://www.linkedin.com/in/tareq-karimi/"> My LinkedIn</a>
-		</div>
-		<div id="Github">
-			<a href="https://github.com/Plomboe">My Github</a>
-		</div>
-		<div id="MTA">
-			<a href="https://www.youracclaim.com/badges/064f17b7-ef04-44c5-8d74-6835b294718d/linked_in">MTA Software Development Fundamentals Certificate</a>
-		</div>	
-		
-		</div>
-		</div>
-		</div>
-	</section>
-	
-	<section id="filler2">
-	</section>
-	
-	<section id="content3">
-	<p>
-		<h2>Send E-mail to m.tareq.karimi@gmail.com:</h2>
-	
-	<form action="m.tareq.karimi@gmail" method="post">
-	<div>
-		<label for="name">Name:</label>
-		<input type="text" id="name" name="user_name" placeholder="Your Name">
 	</div>
-	<div>
-        <label for="mail">Email:</label>
-        <input type="email" id="mail" name="user_email" placeholder="Your Email">
-    </div>
-    <div>
-        <label for="msg">Message:</label>
-        <textarea id="msg" name="user_message" placeholder="Your Message"></textarea>
-    </div>
-	<div class="button">
-		<button type="submit">Send</button>
-	</div>
-</form>
 
-	</section>
-	</p>
+	<div class="collapse container-fluid bg-3 text-center" id="education">
+		<div class="container-fluid bg-3 text-center">    
+		<h3 class="margin">Education</h3><br>
+			<div class="row">
+				<div class="col-sm-4">
+					<h4>Centennial College</h4>
+					<hr/>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+				</div>
+				<div class="col-sm-4"> 
+					<h4>NPower Canada</h4>
+					<hr/>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+				</div>
+				<div class="col-sm-4">
+					<h4>University Of Ontario Institute of Technology</h4>
+					<hr/>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="collapse container-fluid bg-3 text-center" id="experience">
+		<div class="container-fluid bg-3 text-center">    
+		<h3 class="margin">Exprience</h3><br>
+			<div class="row">
+				<div class="col-sm-4">
+					<h4>RBC - Full Stack Developer</h4>
+					<hr/>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+				</div>
+				<div class="col-sm-4"> 
+					<h4>NPower Canada</h4>
+					<hr/>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+				</div>
+				<div class="col-sm-4">
+					<h4>Hackathons</h4>
+					<hr/>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="collapse container-fluid bg-3 text-center" id="projects">
+		<div class="container-fluid bg-3 text-center">    
+		<h3 class="margin">Projects</h3><br>
+			<div class="row">
+				<div class="col-sm-3">
+					<h4>Centennial College</h4>
+					<hr/>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+				</div>
+				<div class="col-sm-3"> 
+					<h4>NPower Canada</h4>
+					<hr/>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+				</div>
+				<div class="col-sm-3">
+					<h4>Project 3</h4>
+					<hr/>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+				</div>
+				<div class="col-sm-3">
+					<h4>Project 4</h4>
+					<hr/>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="container-fluid bg-3 text-center" style="background-color: #2E2B2B">    
+<div class="container">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
 	
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+	
+				<div class="item active">
+					<img src="images\1.jpg" alt="Los Angeles" style="width:100%;">
+					<div class="carousel-caption">
+						<h3>First Image</h3>
+						<p>This is the original!</p>
+					</div>
+				</div>
+	
+				<div class="item">
+					<img src="images\3.jpg" alt="Chicago" style="width:100%;">
+					<div class="carousel-caption">
+						<h3>Second Image</h3>
+						<p>Grey scaled!</p>
+					</div>
+				</div>
+			
+				<div class="item">
+					<img src="images\3.jpg" alt="New York" style="width:100%;">
+					<div class="carousel-caption">
+						<h3>Third Image</h3>
+						<p>I really liked this one!</p>
+					</div>
+				</div>
+		
+			</div>
+	
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Tareq Karimi - Developer - Student - Philomath</a></p> 
+</footer>
 </body>
-<script src= "js/script.js"></script>
+<script src="js/script.js"></script>
 </html>
