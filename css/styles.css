@@ -1,0 +1,157 @@
+/*@font-face{
+    font-family: "fontSimplifica";
+    src: url(simplifica-typeface.tff) format("truetype");
+}*/
+
+/* Whole page */
+body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;   
+}
+p {
+      font-size: 16px;
+}
+.margin {
+    margin-bottom: 45px;
+}
+
+/* Navigation bar */
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: darkslategray;
+}
+.navbar-brand {
+    color: white !important;
+}
+.navbar-nav li a{
+    color: white !important;
+}
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
+}
+
+/*Main banner*/
+.bg-1{
+    background: url(images/44.jpg) fixed;
+    background-size: cover;
+    /*background: #333333;*/
+    height: 100vw;
+    padding-top: 37vw;
+    padding-bottom: 45vw;
+}
+.container-fluid h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    letter-spacing: 5px;
+}
+
+/* About me, Education, Experience and Projects */
+.bg-2 { 
+     background-color: darkslategrey;
+      /*background-color: #474e5d;  Dark Blue */
+      color: #ffffff;
+}
+.container-fluid {
+    color: hsl(0, 0%, 80%);
+    /*color: #1abc9c;*/
+}
+.menuButtons{
+    border: none;
+    background-color: darkslategray
+}
+.svg{
+    height: 40px;
+    width: 40px;
+    padding: 3px;
+}
+.svg:hover{
+    border: solid hsl(0, 0%, 70%);
+    cursor: pointer;
+}
+.svg:focus{
+    border: solid hsl(0, 0%, 70%);
+}
+.mediaIcon{
+    background-color: hsl(0, 0%, 70%);
+    border-radius: 50%;
+    border: none;
+}
+.bg-3{
+    background-color: hsl(0, 0%, 30%);
+}
+.me{
+    border-radius: 50%;
+    margin: 2vw;
+}
+
+
+@media screen and (min-width: 799px) {
+    .describingWords{
+        margin-top: 2vw;
+    }
+    .svg{
+        height: 60px;
+        width: 60px;
+        margin: 35px;
+    }
+    .bg-1{
+        background: url(images/42.jpg) fixed;
+        background-size: contain;
+        height: 50vw;
+        padding-top: 18vw;
+        padding-bottom: 20vw;
+    }
+    .me{
+        float: left;
+    }
+    .aboutMeParagraph{
+        display: inline-block;
+        width: 800px;
+        margin: 10px 0 10px 0;
+    }
+    .aboutMeParagraph p{
+        float: left;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1193px){
+    .aboutMeParagraph{
+        display: inline-block;
+        width: 500px;
+        margin: none;
+    }
+    .aboutMeParagraph p{
+        float: left;
+    }
+    .me{
+        float: left;
+    }
+}
+@media screen and (min-width: 1290px) {
+    .bg-1{
+        background: url(images/43.jpg) fixed;
+        background-size: cover;
+        height: 60vw;
+    }
+    .me{
+        float: left;
+    }
+}
+@media screen and (min-width: 1350px) {
+    .aboutMeParagraph{
+        width: 1000px;
+    }
+    .me{
+        float: left;
+    }
+}
+
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
