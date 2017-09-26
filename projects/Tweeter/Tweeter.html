@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Tweeter</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <style>
+    .hidden {
+      display: none !important;
+    }
+    .logininfo {
+      color: white;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .userId{
+      padding: 10px;
+    }
+    .loggedinmessage {
+        display: flex;
+    }
+
+    .loggedinmessage p {
+      margin-bottom: 0;
+    }
+
+    .card {
+      margin-bottom: 20px;
+    }
+
+    .updateform {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse bg-primary">
+    <div class="row justify-content-between">
+      <div class="col-4">
+        <a class="navbar-brand" href="#">Tweeter</a>
+      </div>
+      <div class="col-4 logininfo">
+        <form id="login" class="form-inline">
+          <div class="field">
+            <input type="text" class="form-control" placeholder="username" required />
+            <button class="btn btn-success">Sign In</button>
+          </div>
+        </form>
+        <div id="loggedin" class="hidden loggedinmessage">
+          <p class="userId">Logged in as <span id="user"></span></p>
+          <button class="btn btn-danger" class="logout" id="logout">Logout</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2 updateform">
+        <form id="updateForm">
+          <h3>Write your update</h3>
+          <div class="form-group">
+            <textarea class="form-control" id="updatefield" disabled required></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn btn-primary" id="submitpost"/>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="updates"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>
+
+    $(function() {
+      
+    var username = sessionStorage.getItem("username");
+    var updates = JSON.parse(localStorage.getItem("updates")) || [];
+
+    console.log(username);
+
+
+    function displayCards() {
+        updates.forEach(function(item) {
+        //append posts the post log from first tweet to last tweet. We want it last tweet to first tweet, so prepend
+        $(".updates").prepend(`<div class="card">
+        <div class="card-block">
+        <p class="card-subtitle text-muted">${item.text}</p>
+        <p class="card-text">Posted by ${item.name}</p>
+        </div></div>`);
+    })
+    }
+
+    function handleLoginDisplay() {
+        $("#updatefield").removeAttr("disabled");
+        $("form#login").addClass("hidden");
+        $("#loggedin").removeClass("hidden");
+        $("#user").text(username);
+    }
+
+    displayCards();
+
+    if (username === null){
+        $("form#login").on("submit", function(e) {
+        e.preventDefault();
+        var loginname = $(this).find("input").val();
+        sessionStorage.setItem("username", loginname);
+        username = loginname;
+
+        handleLoginDisplay();
+    });
+    } else {
+        handleLoginDisplay();
+    }
+
+    $("form#updateForm").on("submit", function(e) { //Callback function
+    e.preventDefault();
+    var update = $("#updatefield").val();
+    updates.push({
+        name: username, 
+        text: update
+    });
+    $("#updatefield").val("");
+    localStorage.setItem("updates", JSON.stringify(updates));
+
+    $(".updates").html("");
+
+    displayCards();
+    });
+
+    $("button#logout").on("click", function(){
+        $("#updatefield").attr("disabled", true);
+        $("form#loggin").removeClass("hidden");
+        $("#loggedin").addClass("hidden");
+        $("#user").text("");
+        sessionStorage.removeItem("username");
+    })
+
+    });
+
+  </script>
+
+</body>
+</html>
