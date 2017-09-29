@@ -25,10 +25,10 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a data-toggle="collapse" data-parent="#accordion" href="#aboutMe">ABOUT</a></li>
-        	<li><a data-toggle="collapse" data-parent="#accordion" href="#education">EDUCATION</a></li>
-        	<li><a data-toggle="collapse" data-parent="#accordion" href="#experience">EXPERIENCE</a></li>
-					<li><a data-toggle="collapse" data-parent="#accordion" href="#projects">PROJECTS</a></li>
+					<li><a id="aboutNav">ABOUT</a></li>
+        			<li><a data-toggle="collapse" data-parent="#accordion" id="educationNav" href="#education">EDUCATION</a></li>
+        			<li><a data-toggle="collapse" data-parent="#accordion" id="experienceNav" href="#experience">EXPERIENCE</a></li>
+					<li><a data-toggle="collapse" data-parent="#accordion" id="projectsNav" href="#projects">PROJECTS</a></li>
 				</ul>
 			</div>
 		</div>
@@ -44,7 +44,7 @@
 </div>
 
 <div id="accordion">
-	<div class="container-fluid bg-2 text-center">
+	<div class="container-fluid bg-2 text-center" id="bg-2">
 			<a data-toggle="collapse" data-parent="#accordion" href="#aboutMe"><img src="images\readingBook.svg" id="aboutMesvg" class="svg" alt="Reading Book"></a>
 			<a data-toggle="collapse" data-parent="#accordion" href="#education"><img src="images\gradCap.svg" id="educationsvg" class="svg" alt="Graduation Cap"></a>
 			<a data-toggle="collapse" data-parent="#accordion" href="#experience"><img src="images\laptop.svg" id="experiencesvg" class="svg" alt="Laptop"></a>
