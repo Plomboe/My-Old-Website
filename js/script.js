@@ -36,13 +36,13 @@ $(function() {
 
 		//Take users to various links
 		$("#githubIcon").on("click", function() {
-			window.location.replace("https://github.com/Plomboe");
+			window.location.assign("https://github.com/Plomboe");
 		});
 		$("#linkedinIcon").on("click", function() {
-			window.location.replace("https://www.linkedin.com/in/tareq-karimi/");
+			window.location.assign("https://www.linkedin.com/in/tareq-karimi/");
 		});
 		$("#googleIcon").on("click", function() {
-			window.location.replace("https://plus.google.com/110881320959077166810");
+			window.location.assign("https://plus.google.com/110881320959077166810");
 		});
 
 		//Hide other options when one of them is clicked
