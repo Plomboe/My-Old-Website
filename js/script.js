@@ -46,7 +46,6 @@ $(function() {
 		});
 		$("#myPicture").on("click", function() {
 			window.location.assign("https://www.linkedin.com/in/tareq-karimi/");
-			console.log("click");
 		});
 
 		//Hide other options when one of them is clicked
