@@ -44,6 +44,10 @@ $(function() {
 		$("#googleIcon").on("click", function() {
 			window.location.assign("https://plus.google.com/110881320959077166810");
 		});
+		$("#myPicture").on("click", function() {
+			window.location.assign("https://www.linkedin.com/in/tareq-karimi/");
+			console.log("click");
+		});
 
 		//Hide other options when one of them is clicked
     $("#aboutMesvg").on("click", function() {
